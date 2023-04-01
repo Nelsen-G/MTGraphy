@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body,
+  ul, ol, li,
+  h1, h2, h3, p, div {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Nunito", serif;
+    background-color: #F9F5F2;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  .container {
+    max-width: 1400px;
+    padding: 0 auto;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .container{
+      max-width: 600px;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .container{
+      max-width: 390px;
+    }
+  }
+  /* Header and Nav Bar*/
+
+header {
+    height: 60px;
+    width: 100%;
+    background-color: #D4B09A;
+    position:fixed;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .header-left {
+    float: left;
+    transition: all 0.2s;
+  }
+
+  .logo {
+    width: 100px;
+    padding-top: 5px;
+  }
+
+  .back{
+      width: 55px;
+      transition: all 0.2s;
+  }
+
+  .back:hover{
+      transform: scale(1.2);
+  }
+
+  .header-right {
+    float: right;
+  }
+  
+  .header-right a {
+    line-height: 60px;
+    padding: 0 25px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.2s;
+  }
+  
+  .header-right a:hover {
+    color: black;
+    background-color: #F9F5F2;
+  }
+
+  #activemenu{ /*menunya lagi di mana sekarang*/
+    color:black;
+    font-weight: bold;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .headerWithLogo{
+      height: 100px;
+
+      display: inline-block;
+      text-align: center;
+    }
+
+    .logo.withLogo{
+      padding-top: 10px;
+    }
+
+    .header-left.withLogo {
+      float: none;
+      margin-bottom: -15px;
+    }
+
+    .header-right.withLogo {
+      float: none;
+
+      display: inline-block;
+      text-align: center;
+    }
+    
+    .header-right a {
+      padding: 0 10px;
+    }
+
+    .header-right.withLogo a {
+      color: white;
+      display: flex;
+      text-align: center;
+    }
+
+    .back{
+      margin-right: -20px;
+    }
+
+  }
+  
+  /*Footer */
+
+  .footer-container{
+      background-color: #D4B09A;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+
+  .social-button img{
+      width: 60px;
+
+      padding-top: 35px;
+      padding-left: 5px;
+      padding-right: 5px;
+
+      transition: all 0.2s;
+  }
+
+  .social-button img:hover{
+    transform: scale(1.1);
+  }
+
+  .footer-menu{
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .footer-menu h6{
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    transition: all 0.3s;
+}
+
+.footer-menu h6:hover{
+    color: black;
+}
+
+.copyright h6{ /*buat copyright blablabla*/
+    color:white;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .social-button img{
+        width: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+  
+    .footer-menu{
+        display: block;
+    }
+
+  .footer-menu h6{
+    margin-top: -10px;
+  }
+
+  .copyright h6{ 
+    font-size: 8px;
+    margin-top: -8px;
+  }
+}
+
+
+/* Fonts */
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 32px;
+    font-weight: normal;
+}
+
+h4{
+    font-size: 24px;
+    font-weight: normal;
+}
+
+h5{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+h6{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+p{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 800px) {
+  h1{
+    font-size: 34px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: normal;
+}
+
+h4{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h5{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+h6{
+    font-size: 10px;
+    font-weight: normal;
+}
+
+p{
+    font-size: 8px;
+    font-weight: normal;
+}
+}
+

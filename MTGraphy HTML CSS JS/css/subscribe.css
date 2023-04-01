@@ -1,0 +1,167 @@
+.subscribe-background{
+    background-image: url(../assets/Images/Subscribe\ Background.jpg);
+
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.subscribe-box{
+    background-color: #F1DECF;
+    opacity: 0.75;
+    border-radius: 26px;
+
+    width: 30%;
+    height: auto;
+
+    position: absolute;
+    top: 55%; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    margin-top: 50px;
+    padding: 50px;
+}
+
+
+.subscribe-box h3{
+   
+    text-align: center;
+
+    font-weight: bold;
+    color: #9F2626;
+    
+    padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+    .subscribe-box{
+        width: 95%;
+
+        top: 500px;
+    }
+  }
+
+.data-input label{
+    font-size: 24px;
+    display: block;
+}
+
+.data-input input, select{
+    outline: none;
+    font-size: 20px;
+ 
+    border-radius: 50px;
+    border: 1px solid #D4B09A;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3), 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    height: 40px;
+    margin: 8px 0;
+    
+    width: 100%;
+}
+
+.data-input select{
+    appearance: none;
+    background-image: url("../assets/Icon/Drop\ Down\ Menu.png");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 10px;
+}
+
+.tnc{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.tnc p{
+    padding-left: 3px;
+    font-size: 18px;
+    
+}
+
+.tnc a{
+    color: #191458;
+    transition: all 0.5s;
+}
+
+.tnc a:hover{
+    text-decoration: underline;
+    color: rgb(85, 11, 11);
+}
+
+.check{
+    accent-color: #D4B09A;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3), 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+
+    width: 16px;
+    height: 16px;
+}
+
+.sub-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 15px;
+}
+
+.btn-subscribe{
+    color: white;
+    font-size: 24px;
+
+    border: none;
+    background: #75A347;
+    border-radius: 85px;
+    padding: 15px 20px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3), 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+
+    transition: all 0.2s;
+  }
+
+  .btn-subscribe:hover{
+      background: #4e6d30;
+  }
+
+
+/*Validation */
+
+.data-input small{
+    visibility: hidden;
+}
+
+.data-input.pass input{
+    border: 2px solid blue;
+}
+
+.data-input.error input{
+    border: 2px solid red;
+}
+
+.data-input.error small{
+    visibility: visible;
+    color: red;
+}
+
+
+/* Checkbox Validation */
+
+.terms-condition small{
+    visibility: hidden;
+}
+
+.terms-condition.error small{
+    visibility: visible;
+    color: red;
+}
+

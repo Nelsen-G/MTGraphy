@@ -1,0 +1,192 @@
+.gallery-header{
+    padding-top: 60px;
+    background-image: url(../assets/Images/Gallery\ Banner.jpg);
+    background-size: cover;
+    height: 400px;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.gallery-header h1{
+    padding-top: 100px;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+
+.gallery-button{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+
+    width: 300px;
+    
+    background-color: #D4B09A;
+
+    padding: 8px;
+
+    border-radius: 50px;
+}
+
+.gallery-button a{
+    color: black;
+    font-size: 24px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.selected{ /*Current Pagenya Lagi dimana, portrait atau landscape*/
+    background-color: white;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.regular{
+    transition: all 0.2s;
+}
+
+.regular:hover{
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 50px ;
+}
+
+@media only screen and (max-width: 800px) {
+    .gallery-header{
+        padding-top: 40px;
+        height: 300px;
+    }
+
+    .gallery-header h1{
+        font-size: 40px;
+    }
+
+    .gallery-button{
+        margin: 10px auto;
+        width: 220px;
+        padding: 4px;
+    }
+
+    .gallery-button a{
+        font-size: 16px;
+    }
+
+}
+
+
+/*Content Wrapper*/
+.content-wrapper{
+    text-align: center;
+    padding-top: 75px;
+
+    display: flex;
+    height: auto;
+}
+
+.content-wrapper h4{
+    font-weight: bold;
+}
+
+.content-wrapper h5{
+    margin-top: -24px;
+}
+
+@media only screen and (max-width: 800px) {
+    .content-wrapper{
+        padding-top: 0px;
+    }
+
+    .content-wrapper h5{
+        margin-top: -18px;
+    }
+
+    .top{
+        padding-top: 60px;
+    }
+}
+
+/*Buat Spacing Paling Bawah*/
+.bottom{
+    padding-bottom: 75px;
+}
+
+
+/* Potrait Photography */
+.photography-portrait{
+    float: left;
+    width: 33%;
+
+    padding-left: 75px;
+    padding-right: 75px;
+
+}
+
+.photography-portrait img{
+    width: 300px;
+    height: 400px;
+    
+    margin-bottom: -30px;
+}
+
+@media only screen and (max-width: 800px) {
+    .photography-portrait{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 20px;
+    }
+
+    .photography-portrait img{
+        margin-bottom: -20px;
+    }
+
+}
+
+
+/* Landscape Photography*/
+.photography-landscape{
+    float: left;
+    width: 50%;
+
+    padding-left: 75px;
+    padding-right: 75px;
+
+}
+
+.photography-landscape img{
+    width: 550px;
+    height:350px;
+    
+    margin-bottom: -30px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .photography-landscape{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 20px;
+    }
+    
+    .photography-landscape img{
+        width: 350px;
+        height: 222px;
+
+        object-fit: cover;
+
+        margin-bottom: -20px;
+    }
+
+}
